@@ -49,12 +49,12 @@ It highlights my ability to design and develop responsive, user-focused interfac
 ## Tech Stack
 
 **Frontend**
-
-* React.js
-* JSX
-* JavaScript (ES6+)
-* HTML5
-* CSS3
+- Next.js
+- React.js
+- JSX / TSX
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
 **Tooling & Deployment**
 
@@ -100,24 +100,22 @@ The application is deployed using Vercel, ensuring fast global delivery and seam
 <img src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://kiran-portfolio.vercel.app" />
 
 ---
+## GitHub Stats
 
-## GitHub Insights
-
-<img src="https://github-readme-stats.vercel.app/api?username=kiranShamsHere&show_icons=true&theme=tokyonight&hide_border=true" />
+![Stats](https://github-readme-stats.vercel.app/api?username=kiranShamsHere&show_icons=true&theme=tokyonight)
 
 ---
 
 ## Contact
 
 * GitHub: https://github.com/kiranShamsHere
-* LinkedIn: (add your profile)
+LinkedIn: https://linkedin.com/in/kiranshams
 
 ---
 
 ## Usage
 
-This repository represents a personal portfolio project.
-Unauthorized reuse or redistribution is not permitted.
+This project is a personal portfolio showcasing my work and skills. Please do not reuse without permission.
 
 <br/>
 
