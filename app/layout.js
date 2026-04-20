@@ -15,7 +15,10 @@ const syne = Syne({
 
 export const metadata = {
   title: 'Kiran Shams — Web Developer & AI Consultant',
-  description: 'Founder & CEO of AgriClima AI Consultant. Web Developer. CNV Ambassador at Hoopo Canada. Building tech that serves a purpose.',
+  description: 'Web Developer, Open Source Contributor & Founder of AgriClima AI.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({ children }) {

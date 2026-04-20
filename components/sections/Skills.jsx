@@ -28,9 +28,6 @@ const GitIcon = () => (
 const GitHubIcon = () => (
   <svg viewBox="0 0 32 32" width="100%" height="100%"><path fill="#fff" d="M16 3a13 13 0 00-4.1 25.3c.6.1.8-.3.8-.6v-2c-3.5.8-4.2-1.5-4.2-1.5-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.3-3.3-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.6 11.6 0 016.2 0c2.4-1.6 3.4-1.3 3.4-1.3.7 1.6.3 2.9.1 3.2.8.9 1.3 2 1.3 3.3 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A13 13 0 0016 3z"/><rect width="32" height="32" rx="16" fill="#24292E"/><path fill="#fff" d="M16 3a13 13 0 00-4.1 25.3c.6.1.8-.3.8-.6v-2c-3.5.8-4.2-1.5-4.2-1.5-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.3-3.3-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.4 1.3a11.6 11.6 0 016.2 0c2.4-1.6 3.4-1.3 3.4-1.3.7 1.6.3 2.9.1 3.2.8.9 1.3 2 1.3 3.3 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A13 13 0 0016 3z"/></svg>
 )
-const ReactIcon = () => (
-  <svg viewBox="0 0 32 32" width="100%" height="100%"><circle cx="16" cy="16" r="3" fill="#61DAFB"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="#61DAFB" strokeWidth="1.5"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="#61DAFB" strokeWidth="1.5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="#61DAFB" strokeWidth="1.5" transform="rotate(120 16 16)"/></svg>
-)
 const NextIcon = () => (
   <svg viewBox="0 0 32 32" width="100%" height="100%"><circle cx="16" cy="16" r="13" fill="#000"/><path fill="#fff" d="M12 11h2v8.5l7-8.5h2L16 19.5 23 27h-2.5L16 22l-4 5H9.5l6.5-8L12 11z"/></svg>
 )
@@ -124,11 +121,11 @@ const categories = [
     desc: 'Always building — on my way to becoming an AI Engineer.',
     skills: [
       { Icon: NextIcon, name: 'Next.js', big: true, bg: '#00000030' },
-      { Icon: ReactIcon, name: 'React', big: true, bg: '#61DAFB15' },
       { Icon: n8nIcon, name: 'n8n', big: false, bg: '#EA4B7115' },
       { Icon: LangChainIcon, name: 'LangChain', big: false, bg: '#4ADE8015' },
       { Icon: AIAgentsIcon, name: 'AI Agents', big: false, bg: '#4ADE8015' },
       { Icon: AgriClimaIcon, name: 'Agentic Workflows', big: false, bg: '#4ADE8015' },
+      { Icon: GitHubIcon, name: 'Open Source', big: false, bg: '#24292E30' },
     ]
   },
 ]

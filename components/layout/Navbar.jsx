@@ -15,9 +15,27 @@ const navLinks = [
 ]
 
 export default function Navbar() {
-  const [theme, setTheme]           = useState('dark')
+  const [theme, setTheme]           = useState(null)
   const [scrolled, setScrolled]     = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
+
+  // Detect system theme preference on mount
+  useEffect(() => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const systemTheme = prefersDark ? 'dark' : 'light'
+    setTheme(systemTheme)
+    document.documentElement.setAttribute('data-theme', systemTheme)
+
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = (e) => {
+      const newTheme = e.matches ? 'dark' : 'light'
+      setTheme(newTheme)
+      document.documentElement.setAttribute('data-theme', newTheme)
+    }
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -54,7 +72,6 @@ export default function Navbar() {
         borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
         backdropFilter: scrolled ? 'blur(16px)' : 'none',
         transition: 'all 0.3s ease',
-        borderBottom: '1px solid var(--border)',
       }}>
 
         {/* Logo */}
@@ -93,13 +110,24 @@ export default function Navbar() {
 
           {/* Theme toggle — desktop only */}
           <button id="theme-btn-desktop" onClick={toggleTheme} style={{
-            background: 'var(--bg-surface)', border: '1px solid var(--border)',
+            background: 'rgba(15,17,23,0.6)', border: '1px solid rgba(110,231,183,0.2)',
             borderRadius: '50px', padding: '6px 14px', cursor: 'pointer',
-            color: 'var(--text)', fontSize: '13px',
-            display: 'flex', alignItems: 'center', gap: '6px', transition: 'all 0.2s',
-          }}>
+            color: theme === 'light' ? '#6EE7B7' : 'var(--text)', fontSize: '13px',
+            display: 'flex', alignItems: 'center', gap: '6px', transition: 'all 0.3s',
+          }}
+            onMouseEnter={e => {
+              if (theme === 'light') {
+                e.currentTarget.style.boxShadow = '0 0 12px rgba(110,231,183,0.6)'
+                e.currentTarget.style.borderColor = 'rgba(110,231,183,0.5)'
+              }
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.boxShadow = 'none'
+              e.currentTarget.style.borderColor = 'rgba(110,231,183,0.2)'
+            }}
+          >
             {theme === 'dark' ? '☀️' : '🌙'}
-            <span style={{ color: 'var(--text-muted)', fontSize: '12px' }}>
+            <span style={{ color: theme === 'light' ? '#6EE7B7' : 'var(--text-muted)', fontSize: '12px' }}>
               {theme === 'dark' ? 'Light' : 'Dark'}
             </span>
           </button>
@@ -120,11 +148,23 @@ export default function Navbar() {
           {/* Hamburger — mobile only */}
           <button id="hamburger-btn" onClick={() => setDrawerOpen(v => !v)} style={{
             display: 'none',
-            background: 'var(--bg-surface)', border: '1px solid var(--border)',
+            background: 'rgba(15,17,23,0.6)', border: '1px solid rgba(110,231,183,0.2)',
             borderRadius: '6px', width: '38px', height: '38px',
-            cursor: 'pointer', color: 'var(--text)', fontSize: '1.1rem',
+            cursor: 'pointer', color: theme === 'light' ? '#6EE7B7' : 'var(--text)', fontSize: '1.1rem',
             alignItems: 'center', justifyContent: 'center',
-          }}>
+            transition: 'all 0.3s',
+          }}
+            onMouseEnter={e => {
+              if (theme === 'light') {
+                e.currentTarget.style.boxShadow = '0 0 12px rgba(110,231,183,0.6)'
+                e.currentTarget.style.borderColor = 'rgba(110,231,183,0.5)'
+              }
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.boxShadow = 'none'
+              e.currentTarget.style.borderColor = 'rgba(110,231,183,0.2)'
+            }}
+          >
             {drawerOpen ? '✕' : '☰'}
           </button>
         </div>

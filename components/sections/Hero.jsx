@@ -1,7 +1,13 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-const stack = ['HTML', 'CSS', 'JS', 'PHP', 'Python', 'Bootstrap', 'MySQL', 'React', 'Next.js', 'Git']
+const roles = [
+  'Web Developer',
+  'Open Source Contributor',
+  'Founder @ AgriClima AI',
+  'AI & Automation Explorer',
+  'Full Stack Builder',
+]
 
 const carouselItems = [
   { label: 'Role', value: 'Founder & CEO', sub: 'AgriClima AI Consultant', color: '#6EE7B7' },
@@ -9,6 +15,7 @@ const carouselItems = [
   { label: 'Education', value: 'BSCS Student', sub: 'SAU Tandojam', color: '#6EE7B7' },
   { label: 'Status', value: '● Available', sub: 'Open to hire', color: '#4ADE80' },
   { label: 'Currently Learning', value: 'AI Automation', sub: 'n8n · LangChain · Agents', color: '#818CF8' },
+  { label: 'Open Source', value: 'Contributor', sub: 'GSoC Org Finder · GitPilot', color: '#6EE7B7' },
   { label: 'Goal', value: 'AI Engineer', sub: 'Building smart systems', color: '#6EE7B7' },
   { label: 'Focus', value: 'Climate Tech', sub: 'AgriClima · Hoopo Canada', color: '#818CF8' },
   { label: 'Stack', value: 'Full Stack', sub: 'HTML → Next.js → Python', color: '#6EE7B7' },

@@ -15,7 +15,7 @@ const phases = [
     tag: 'TECH',
     color: '#6EE7B7',
     heading: 'I build for the web.',
-    body: 'Full Stack Developer crafting responsive, modern web applications using HTML, CSS, JavaScript, PHP, Python & Bootstrap. Currently leveling up with Next.js, React, and AI automation tools — building smarter systems with n8n, LangChain & agentic workflows.',
+    body: 'Full Stack Developer building web apps with HTML, CSS, JavaScript, PHP & Python. Open source contributor — active on GitHub with 69+ repos. Exploring AI, ML and automation tools like n8n and LangChain.',
     accentBar: 'linear-gradient(90deg,#6EE7B7,transparent)',
     lineColor: '#6EE7B7',
     duration: 4500,
