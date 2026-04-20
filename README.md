@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<h1 style="font-weight:700; letter-spacing:0.5px;">
+Kiran Shams — Portfolio
+</h1>
 
-First, run the development server:
+<p style="color:#9CA3AF; max-width:600px;">
+A high-performance, modern portfolio built with React, focused on clean UI, component-based architecture, and seamless user experience.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<br/>
+
+<a href="https://kiran-portfolio.vercel.app">
+  <img src="https://img.shields.io/badge/Live%20Demo-111827?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
+<a href="https://github.com/kiranShamsHere/KS-Portfolio">
+  <img src="https://img.shields.io/badge/Repository-000000?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Inter&size=22&duration=3000&color=6366F1&center=true&vCenter=true&width=650&lines=React+Developer;Component-Based+Architecture;Clean+UI+%7C+Modern+UX;Performance+Focused+Web+Apps" />
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:0F172A&height=120&section=header"/>
+
+</div>
+
+---
+
+## Overview
+
+This portfolio is built using **React and JSX**, following a component-driven structure to ensure scalability and maintainability.
+It highlights my ability to design and develop responsive, user-focused interfaces with attention to detail.
+
+---
+
+## Key Highlights
+
+* Component-based architecture using React
+* JSX for dynamic and reusable UI
+* Fully responsive design system
+* Clean layout with modern styling principles
+* Optimized for performance and usability
+
+---
+
+## Tech Stack
+
+**Frontend**
+
+* React.js
+* JSX
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+
+**Tooling & Deployment**
+
+* Git & GitHub
+* Vercel
+
+---
+
+## Project Structure
+
+```bash id="elite1"
+KS-Portfolio/
+│── public/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│── package.json
+│── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Local Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash id="elite2"
+git clone https://github.com/kiranShamsHere/KS-Portfolio.git
+cd KS-Portfolio
+npm install
+npm run dev
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application is deployed using Vercel, ensuring fast global delivery and seamless CI/CD integration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Live Preview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://kiran-portfolio.vercel.app" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## GitHub Insights
+
+<img src="https://github-readme-stats.vercel.app/api?username=kiranShamsHere&show_icons=true&theme=tokyonight&hide_border=true" />
+
+---
+
+## Contact
+
+* GitHub: https://github.com/kiranShamsHere
+* LinkedIn: (add your profile)
+
+---
+
+## Usage
+
+This repository represents a personal portfolio project.
+Unauthorized reuse or redistribution is not permitted.
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:6366F1&height=120&section=footer"/>
